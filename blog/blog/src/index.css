@@ -1,0 +1,202 @@
+/* Overall layout improvement */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Noto Serif', serif;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #8d8b8e;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #a9a8a9;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #333333;
+}
+
+.navbar h1 {
+  font-size: 2.5em;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .links p {
+  margin-right: auto;
+  color: #e0e0e0;
+  font-size: 1.2em;
+}
+
+.navbar .links a {
+  color: #8d8b8e;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.navbar .links a:hover {
+  color: #6b0e02;
+}
+
+
+/* Improved blog list layout */
+.blogs a {
+  display: block;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 6px solid #8d8b8e;
+  background: rgba(33, 33, 33, 0.8);
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.blogs a:hover {
+  border-color: #6b0e02;
+  background: rgba(33, 33, 33, 0.9);
+}
+
+/* Details page improvements */
+.blog-details {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.blog-details h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.blog-details .content {
+  background: rgba(33, 33, 33, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Action buttons */
+.delete, .edit {
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  right: 0;
+  background-color: rgba(197, 182, 182, 0.2);
+}
+
+.edit {
+  right: 50px;
+  background-color: rgba(248, 247, 246, 0.2);
+}
+
+.delete:hover {
+  background-color: rgba(163, 119, 113, 0.4);
+}
+
+.edit:hover {
+  background-color: rgba(163, 119, 113, 0.4);
+}
+
+/* Create Review Page */
+/* Create Blog Page */
+.create {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(33, 33, 33, 0.8); /* Slightly transparent dark background */
+  border-radius: 8px;
+}
+
+.create label {
+  color: #8d8b8e; /* Base color for labels */
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #333333; /* Dark background for inputs */
+  border: 1px solid #444444; /* Slightly lighter border */
+  color: #e0e0e0; /* Light text color */
+}
+
+textarea {
+  height: 150px;
+}
+
+.create button {
+  background: #8d8b8e; /* Base color for button */
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.create button:hover {
+  background-color: #a9a8a9; /* Lighter color on hover */
+}
+
+
+footer {
+  background-color: #1f1f1f;
+  color: #8d8b8e;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333333;
+  margin-top: 60px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* About Page */
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(33, 33, 33, 0.8); /* Slightly transparent dark background */
+  border-radius: 8px;
+}
+
+.about h1,
+.about h3 {
+  color: #e0e0e0; /* White color for headings */
+}
+
+.about p {
+  color: #d0d0d0; /* Slightly lighter gray for paragraphs */
+}
+
